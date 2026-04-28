@@ -1,0 +1,50 @@
+.how-section {
+  background: #0b0f19;
+  position: relative;
+}
+
+.h-line {
+  width: 60px;
+  height: 4px;
+  background: var(--accent-color, #00d2ff);
+  border-radius: 2px;
+}
+
+.step-card {
+  position: relative;
+  padding: 5px 30px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  height: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.step-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(0, 210, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+/* El número gigante transparente al estilo Codrops */
+.step-number {
+  font-size: 6rem;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 210, 255, 0.2);
+  line-height: 1;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover .step-number {
+  -webkit-text-stroke: 1px rgba(0, 210, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.text-white-50 {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}

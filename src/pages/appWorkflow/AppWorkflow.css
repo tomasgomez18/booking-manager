@@ -1,0 +1,33 @@
+.workflow-section {
+  background: #0b0f19;
+}
+
+.workflow-column {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.workflow-dot {
+  width: 32px;
+  height: 32px;
+  background: #00d2ff;
+  color: #0b0f19;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+  font-size: 0.8rem;
+}
+
+.workflow-dot.variant-blue {
+  background: #3a7bd5;
+}
+
+.reward-box {
+  background: linear-gradient(135deg, rgba(0, 210, 255, 0.05) 0%, rgba(58, 123, 213, 0.05) 100%);
+  border: 1px dashed rgba(0, 210, 255, 0.2) !important;
+}
+
+.text-info { color: #00d2ff !important; }
