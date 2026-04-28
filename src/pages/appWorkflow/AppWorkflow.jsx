@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { WORKFLOW_DATA as data } from '../../services/workflowData';
+import { WORKFLOW_DATA as data } from '../../utils/workflowData';
 import './AppWorkflow.css';
 
 const anim = {

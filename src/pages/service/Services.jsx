@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { SERVICES_DATA } from '../../services/servicesData';
+import { SERVICES_DATA } from '../../utils/servicesData';
 import './Services.css';
 
 const anim = {

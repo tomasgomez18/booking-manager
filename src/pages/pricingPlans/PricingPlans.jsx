@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
-import { PRICING_DATA } from '../../services/pricingData';
+import { PRICING_DATA } from '../../utils/pricingData';
 import './PricingPlans.css';
 
 const PricingPlans = () => (
