@@ -1,0 +1,55 @@
+.services-page {
+  background: #0b0f19; /* Mantener coherencia con el Home */
+  min-height: 100vh;
+}
+
+/* Contenedor principal con perspectiva 3D */
+.service-card-container {
+  perspective: 1000px;
+  background: transparent;
+  min-height: 280px; /* Altura unificada para que el flip no rompa el layout */
+}
+
+/* Contenedor interno que ejecuta la rotación */
+.service-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.service-card-container:hover .service-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Estilo base inmutable para ambas caras */
+.service-card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Soporte Safari */
+  background: rgba(255, 255, 255, 0.02) !important;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Cara trasera volteada por defecto */
+.service-card-back {
+  transform: rotateY(180deg);
+  border-color: rgba(0, 210, 255, 0.3) !important; /* Brillo cyan para indicar interacción */
+}
+ 
+.service-icon {
+  background: rgba(0, 210, 255, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.15);
+}
+
+.text-info {
+  color: #00d2ff !important;
+}

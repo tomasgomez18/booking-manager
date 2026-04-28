@@ -1,0 +1,45 @@
+.pricing-section {
+  background: #0b0f19;
+}
+
+.pricing-card {
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: white;
+  border-radius: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Plan Destacado ($25k) */
+.pricing-card.featured {
+  background: rgba(0, 210, 255, 0.05) !important;
+  border: 2px solid #00d2ff !important;
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 210, 255, 0.1);
+}
+
+/* Plan Futuro */
+.pricing-card.future-card {
+  opacity: 0.6;
+  filter: grayscale(0.5);
+  border-style: dashed !important;
+}
+
+.price-tag {
+  font-family: 'Inter', sans-serif;
+}
+
+.amount {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.currency, .period {
+  font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+.pricing-card:hover {
+  border-color: rgba(0, 210, 255, 0.5) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
